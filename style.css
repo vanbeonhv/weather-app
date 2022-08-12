@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: sans-serif;
+    text-align: center;
+    background-image: linear-gradient(45deg, #22c1c3, #fdbb2d);
+}
+h1 {
+    padding-top: 50px;
+    color: #A149FA;
+}
+
+.inputValue,.search-btn {
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #edf2f5;
+    outline-style: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button.search-btn {
+    background-color: #6c63ff;
+    color: #fff;
+
+}
+
+.search-btn:hover {
+    background-color: #483dff;
+}
+
+.container {
+    width: 350px;
+    padding: 20px 0 200px 0;
+    border-radius: 5px;
+    background-color: #3b44f6a8;
+    margin: 50px auto;
+}
+
+.container p {
+    padding: 10px 0;
+    color: #fff;
+    font-size: 20px;
+}
+
+.container p:hover {
+    opacity: 0.8;
+    cursor: default;
+}
+
+.img-wrap {
+    height: 200px;
+    width: 200px;
+    border-radius: 5px;
+
+    margin: 0 auto;
+}
+
+.weatherIcon {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
