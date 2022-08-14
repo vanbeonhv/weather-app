@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather App</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    </head>
+    <body>
+        <h1>Find the weather in any city you want!</h1>
+        <input type="text" class="inputValue" placeholder="Enter City" onkeyup="getInputValue(this)">
+        <button class="search-btn">Search City</button>
+        <div class="container">
+            <div class="img-wrap">
+                <img src="weather.png" alt="weatherIcon" class="weatherIcon">
+            </div>
+            <div class="weatherDescription">
+                <p>City: <span class="city"></span></p>
+                <p>Country: <span class="country"></span></p>
+                <p>Temporary: <span class="temp"></span> &#8451</p>
+                <p>Humidity: <span class="humidity"></span>%</p>
+                <p>Weather: <span class="weather"></span></p>
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
