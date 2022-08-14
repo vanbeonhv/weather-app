@@ -22,7 +22,10 @@ document.querySelector(".search-btn").onclick = () =>
         document.querySelector(".country").textContent = `${country}`;
 
         let weatherApi = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=metric&lang=vi`;
+<<<<<<< HEAD
         console.log(weatherApi);
+=======
+>>>>>>> 380f2bf48746c536740bd3e8efc210679f53b902
         axios.get(weatherApi).then((weatherApi) => {
           let temp = weatherApi.data.main.temp;
           let humidity = weatherApi.data.main.humidity;
@@ -42,7 +45,11 @@ document.querySelector(".search-btn").onclick = () =>
         });
       });
     })
+<<<<<<< HEAD
     .catch(() => alert("Sai tên thành phố. Mời nhập lại"));
+=======
+    .catch(() => console.log("Api error"));
+>>>>>>> 380f2bf48746c536740bd3e8efc210679f53b902
 
 function getCityName() {
   let cityName = document.querySelector(".inputValue").value;
